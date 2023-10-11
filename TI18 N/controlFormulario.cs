@@ -31,6 +31,9 @@ namespace ExercicioTI18N
                               "1. Exercicio 01\n" +
                               "2. Exercicio 02\n" +
                               "3. Exercicio 03\n" +
+                              "4. Exercicio 04\n" +
+                              "5. Exercicio 05\n" +
+                              "6. Exercicio 06\n" +
                               "Escolha uma das opções acima: ");
             ConsultarOpcao = Convert.ToInt32(Console.ReadLine());
         }//mostrar menu
@@ -92,11 +95,21 @@ namespace ExercicioTI18N
                         //Mostrar o resultado 
                         Console.WriteLine("O antecessor é: " + exercicio.Antecessor(num));
                         break;
+                    case 4:
+                        Console.WriteLine("Informe o valor da base: ");
+                        num1 = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe o valor da altura: ");
+                        num2 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("O valor do retângulo é : " + exercicio.MultiplicarArea(num1,num2));
+                        break;
                     default:
                         Console.WriteLine("Opção escolhida não é válida!");
                         break;     
                 }//fim do escolha
             } while (ConsultarOpcao != 0);
+                  
+                  
         }//fim método
 
 

@@ -51,6 +51,14 @@ namespace ExercicioTI18N
         public int Antecessor (int num) 
         {
             return num - 1;
+        }//fim método
+
+        //Exercicio 04 - Calcular e escrever a área do retângulo
+        public double MultiplicarArea(int num1, int num2)
+        {
+            return (num1 * num2);
+
         }
-    }//fim da classe
+
+        }//fim da classe
 }//fim do projeto 
